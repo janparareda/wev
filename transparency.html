@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <div>
+        <img src="images/transparency.gif" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/transparency.png" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/transparency.jpeg" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+    <p>
+      What is the most optimal format for this type of image and why? What
+      happens when we save it in JPEG format? If our website has a white
+      background, what format would be the most optimal and why?<br />The best
+      format for an image depends on how you will use it. If you need the image
+      to be clear and keep its quality, PNG is good. It's because PNG does not
+      lose quality when you save it. But, if you save an image as a JPEG, it
+      might not look as clear. This happens because JPEG makes the image file
+      smaller by reducing its quality. This can make the picture look a bit
+      blurry, especially where the colors change a lot. If your website has a
+      white background, using JPEG could be better because the file is smaller.
+      This means your website will load faster.
+    </p>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
